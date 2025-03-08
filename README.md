@@ -37,14 +37,10 @@ pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4").
 Usage
 Run the script and enter a text prompt to generate an animation.
 
-bash
-Copy
-Edit
+
 python generate_animation.py
 Example output:
 
-css
-Copy
 Edit
 Enter a description for your animation: A futuristic city at night
 Generating frame 1/10...
@@ -64,16 +60,12 @@ Customization
 Change the Number of Frames
 Modify num_frames in the script:
 
-python
-Copy
 Edit
 num_frames = 20  # Default: 10
 Adjust Frame Rate
 Modify fps in imageio.mimsave():
 
-python
-Copy
-Edit
+
 imageio.mimsave("animation.gif", frames, fps=5)  # Default: 3
 License
 This project is open-source under the MIT License.
